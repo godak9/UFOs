@@ -1,11 +1,11 @@
 // import the data from data.js
 const tableData = data;
 // Reference the HTML table using D3
-var tbody = d3.select(“tbody”);
+var tbody = d3.select("tbody");
 // Build table
 function buildTable(data) {
     // Clear rows 
-    tboday.html("");
+    tbody.html("");
     // Loop through each object in the data
     //and append a row and cells for each value in the row
     data.forEach((dataRow) => {
@@ -36,7 +36,7 @@ function handleClick() {
     // Rebuild the table using the filtered data
     // @NOTE: If no date was entered, then filteredData will just be the original tableData.
     buildTable(filteredData);
-}
+};
 
 // Attach an event to listen for the form button
 d3.selectAll("#filter-btn").on("click", handleClick);
