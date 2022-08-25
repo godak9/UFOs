@@ -25,7 +25,7 @@ function buildTable(data) {
 
 // 1. Create a variable to keep track of all the filters as an object.
 // Will store the property "id"
-var filters=[]
+var filters=[];
 
 // 3. Use this function to update the filters. 
 function updateFilters(){
@@ -37,7 +37,7 @@ function updateFilters(){
   let filterID= changedElement.attr("id");
   // 5. If a filter value was entered then add that filterId and value
   // to the filters list. Otherwise, clear that filter from the filters object.
-  if (elementRevised){
+  if (elementNew){
     filters[filterID]= elementNew;
   }
   else {
